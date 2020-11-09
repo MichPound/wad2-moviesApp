@@ -9,7 +9,7 @@ import MovieReviewPage from "./pages/movieReviewPage";
 import SiteHeader from './components/siteHeader'
 import UpcomingMoviesPage from './pages/upcomingMoviesPage';
 import MoviesContextProvider from "./contexts/moviesContext";
-import UpcomingMoviesContextProvider from "./contexts/upcomingMoviesContext";
+// import UpcomingMoviesContextProvider from "./contexts/upcomingMoviesContext";
 import GenresContextProvider from "./contexts/genresContext";
 import AddMovieReviewPage from './pages/addMovieReviewPage'
 
@@ -19,7 +19,7 @@ const App = () => {
       <div className="jumbotron">
         <SiteHeader /> 
         <div className="container-fluid">
-        <UpcomingMoviesContextProvider>
+        {/* <UpcomingMoviesContextProvider> */}
           <MoviesContextProvider>
             <GenresContextProvider>    {/* NEW */}
               <Switch>
@@ -33,7 +33,7 @@ const App = () => {
               </Switch>
             </GenresContextProvider>    {/* NEW */}
           </MoviesContextProvider>
-          </UpcomingMoviesContextProvider>
+          {/* </UpcomingMoviesContextProvider> */}
         </div>
       </div>
     </BrowserRouter>

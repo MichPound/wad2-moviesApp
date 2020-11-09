@@ -1,3 +1,4 @@
+/*
 import React, { useEffect, createContext, useReducer } from "react";
 import { getUpcomingMovies } from "../api/tmdb-api";
 
@@ -39,7 +40,7 @@ const UpcomingMoviesContextProvider = (props) => {
   }; 
   useEffect(() => {
     getUpcomingMovies().then((movies) => {
-      dispatch({ type: "load", payload: { movies } });
+      dispatch({ type: "1", payload: { movies } });
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -59,3 +60,4 @@ const UpcomingMoviesContextProvider = (props) => {
 };
 
 export default UpcomingMoviesContextProvider;
+*/
